@@ -1,6 +1,6 @@
 RDPme
 
-RDPme is a simple TUI (Text User Interface) wrapper for launching Remote Desktop sessions using freerdp (and the xfreerdp command). It guides you through a series of dialogs to collect connection parameters (IP address, username, window size, and multi-monitor support) and then executes freerdp with your selections.
+RDPme is a simple TUI (Text User Interface) wrapper for launching Remote Desktop sessions using freerdp (and the xfreerdp command). It guides you through a series of dialogs to collect connection parameters (IP address, username, window size, and multi-monitor support) and then executes freerdp with your selections. Special thanks to Bill from Sudo Show with sharing his xfreerdp parameters passthrough!
 Features
 
     TUI Wizard: Uses dialog to collect user inputs in a step-by-step interface.
