@@ -24,13 +24,9 @@ width=$(echo "$window_size" | cut -d'x' -f1)
 height=$(echo "$window_size" | cut -d'x' -f2)
 
 # ----- Multi-monitor Setup -----
-dialog --yesno "Does the endpoint support multiple monitors?" 8 40
+dialog --yesno "Does the target machine use multiple monitors?" 8 50
 if [ $? -eq 0 ]; then
     multimon_flag="/multimon"
-    num_monitors=$(dialog --inputbox "Enter number of monitors (max 4):" 8 40 3>&1 1>&2 2>&3)
-    if [ "$num_monitors" -gt 4 ]; then
-        num_monitors=4
-    fi
 else
     multimon_flag=""
 fi
